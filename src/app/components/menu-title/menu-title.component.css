@@ -1,0 +1,12 @@
+.container__menu-title h1 {
+  margin-block: 1rem;
+  margin-inline: 0;
+  font-size: clamp(3.5rem, 10vw + 1.5rem,9rem);
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.container__menu-title hr {
+  margin-block: 1.25rem;
+}

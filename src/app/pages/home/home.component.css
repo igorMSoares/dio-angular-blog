@@ -1,0 +1,10 @@
+.container__home {
+  max-width: 80vw;
+  min-width: 18.5rem;
+  margin-inline: auto;
+}
+
+.container__articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

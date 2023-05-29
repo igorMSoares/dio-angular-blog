@@ -3,6 +3,7 @@ body {
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-width: 18.75rem;
+  padding: 2rem;
 }
 
 a {

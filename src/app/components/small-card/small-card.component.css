@@ -1,0 +1,18 @@
+.container__small-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* padding: 0.5rem; */
+}
+
+.small-card__date p {
+  margin: 0.5rem 0;
+  color: grey;
+  font-size: 0.75rem;
+}
+
+.small-card__title h2 {
+  margin-block: 0.75rem;
+  font-size: 1.25rem;
+  max-width: 40ch;
+}

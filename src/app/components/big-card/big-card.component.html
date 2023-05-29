@@ -1,13 +1,13 @@
 <div class="container__big-card">
   <div class="big-card__photo">
-    <img src="{{ photoCover }}" alt="Placeholder Image" width="550" />
+    <img src="{{ coverPhoto }}" alt="Placeholder Image" width="550" />
   </div>
   <div class="big-card__date">
-    <p>{{ cardDate }}</p>
+    <p>{{ cardDate }} - by {{ cardAuthor }}</p>
   </div>
   <div class="big-card__title">
     <h1>
-      <a href="{{ cardAnchorURL }}">{{ cardTitle }}</a>
+      <a [routerLink]="['content', articleId]">{{ cardTitle }}</a>
     </h1>
   </div>
   <div class="big-card__description">{{ cardDescription }}</div>

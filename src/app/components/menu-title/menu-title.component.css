@@ -1,4 +1,4 @@
-.container__menu-title h1 {
+.container__menu-title > h1 {
   margin-block: 1rem;
   margin-inline: 0;
   font-size: clamp(3.5rem, 10vw + 1.5rem,9rem);
@@ -7,6 +7,6 @@
   font-weight: bolder;
 }
 
-.container__menu-title hr {
+.container__menu-title > hr {
   margin-block: 1.25rem;
 }

@@ -1,14 +1,14 @@
 <div class="container__small-card">
   <div class="small-card__photo">
-    <img src="{{ photoCover }}" alt="" width="200" />
+    <img src="{{ coverPhoto }}" alt="" width="200" />
   </div>
   <div class="small-card__text">
     <div class="small-card__date">
-      <p>{{ cardDate }}</p>
+      <p>{{ cardDate }} - by {{ cardAuthor}}</p>
     </div>
     <div class="small-card__title">
       <h2>
-        <a href="{{ cardAnchorURL }}" target="_blank">{{ cardTitle }}</a>
+        <a [routerLink]="['content', articleId]">{{ cardTitle }}</a>
       </h2>
     </div>
   </div>

@@ -1,1 +1,20 @@
-<p>content works!</p>
+<div class="container__content">
+  <div class="content__cover">
+    <img src="{{ coverPhoto }}" alt="" />
+  </div>
+  <div class="content__title">
+    <h1>{{ contentTitle }}</h1>
+    <hr />
+  </div>
+  <div class="content__date">
+    <p>{{ contentDate }}</p>
+  </div>
+  <div class="content__description">
+    <p>{{ contentText }}</p>
+  </div>
+  <div class="content__url">
+    <a href="{{ contentUrl }}" target="_blank"
+      >Click here to read the full article on Medium</a
+    >
+  </div>
+</div>

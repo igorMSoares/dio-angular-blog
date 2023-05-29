@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { NullArticle, getContent } from '../data/Content';
 
 @Component({
   selector: 'app-big-card',
@@ -7,17 +8,30 @@ import { Component, Input } from '@angular/core';
 })
 export class BigCardComponent {
   @Input()
-  photoCover: string = '';
+  articleId: string = '-1';
 
-  @Input()
+  cardAuthor: string = '';
+  coverPhoto: string = '';
   cardDate: string = '';
-
-  @Input()
   cardTitle: string = '';
-
-  @Input()
-  cardAnchorURL: string = ''
-
-  @Input()
+  cardUrl: string = '';
   cardDescription: string = '';
+
+  ngOnInit() {
+    this.setCardProps(this.articleId);
+  }
+
+  setCardProps(id: string) {
+    if (id === '-1') return;
+
+    const content = getContent(id);
+    if (content instanceof NullArticle) return;
+
+    this.cardAuthor = content.author;
+    this.coverPhoto = content.photo;
+    this.cardDate = content.date;
+    this.cardTitle = content.title;
+    this.cardUrl = content.url;
+    this.cardDescription = content.description;
+  }
 }

@@ -1,12 +1,14 @@
 .container__small-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
-  /* padding: 0.5rem; */
+}
+
+.small-card__photo {
+  flex-shrink: 0;
 }
 
 .small-card__date p {
-  margin: 0.5rem 0;
   color: grey;
   font-size: 0.75rem;
 }

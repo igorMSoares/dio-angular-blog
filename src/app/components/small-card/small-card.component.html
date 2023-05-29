@@ -1,19 +1,14 @@
 <div class="container__small-card">
   <div class="small-card__photo">
-    <img
-      src="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg"
-      alt="Placeholder Image"
-      width="200"
-    />
+    <img src="{{ photoCover }}" alt="" width="200" />
   </div>
   <div class="small-card__text">
     <div class="small-card__date">
-      <p>15 de Maio, 2023</p>
+      <p>{{ cardDate }}</p>
     </div>
     <div class="small-card__title">
       <h2>
-        Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
-        cillum sint consectetur cupidatat.
+        <a href="{{ cardAnchorURL }}" target="_blank">{{ cardTitle }}</a>
       </h2>
     </div>
   </div>

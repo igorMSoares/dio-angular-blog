@@ -1,10 +1,12 @@
 <div class="container__small-card">
   <div class="small-card__photo">
-    <img src="{{ coverPhoto }}" alt="" width="200" />
+    <a [routerLink]="['content', articleId]">
+      <img src="{{ coverPhoto }}" alt="" width="200" />
+    </a>
   </div>
   <div class="small-card__text">
     <div class="small-card__date">
-      <p>{{ cardDate }} - by {{ cardAuthor}}</p>
+      <p>{{ cardDate }} - by {{ cardAuthor }}</p>
     </div>
     <div class="small-card__title">
       <h2>

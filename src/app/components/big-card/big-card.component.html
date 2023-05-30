@@ -1,6 +1,8 @@
 <div class="container__big-card">
   <div class="big-card__photo">
-    <img src="{{ coverPhoto }}" alt="Placeholder Image" width="550" />
+    <a [routerLink]="['content', articleId]">
+      <img src="{{ coverPhoto }}" alt="Placeholder Image" width="550" />
+    </a>
   </div>
   <div class="big-card__date">
     <p>{{ cardDate }} - by {{ cardAuthor }}</p>
@@ -10,5 +12,9 @@
       <a [routerLink]="['content', articleId]">{{ cardTitle }}</a>
     </h1>
   </div>
-  <div class="big-card__description">{{ cardDescription }}</div>
+  <div class="big-card__description">
+    <a [routerLink]="['content', articleId]">
+      {{ cardDescription }}
+    </a>
+  </div>
 </div>

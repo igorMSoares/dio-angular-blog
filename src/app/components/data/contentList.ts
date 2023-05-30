@@ -3,7 +3,7 @@ export const contentList = [
     id: '1',
     photo:
       'https://miro.medium.com/v2/resize:fit:720/format:webp/1*S3Bzsc7VMpFZcTgOxKDgpA.png ',
-    date: '15 de Março, 2023',
+    date: 'Mar 15, 2023',
     author: 'Transifex',
     title: 'The Ultimate 2023 Angular Internationalization Guide',
     url: 'https://medium.com/nerd-for-tech/the-ultimate-2023-angular-internationalization-guide-2aff1bd6364f',
@@ -31,7 +31,7 @@ Angular Internationalization Tutorial`,
     id: '2',
     photo:
       'https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Bx0gNW69lAXaSRqRw0_8dw.jpeg',
-    date: '8 de Dezembro, 2017',
+    date: 'Dec 8, 2017',
     author: 'Per Harald Borgen',
     title: 'How to make your HTML responsive by adding a single line of CSS',
     url: 'https://medium.com/free-code-camp/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431',
@@ -46,13 +46,15 @@ This means we don’t have to clutter up the HTML with ugly class names (i.e. co
 Now let’s jump into it!
 
 The setup
-For this article, we’ll continue on with the grid we used in my first CSS Grid article. Then we’ll add the images at the end of the article. Here’s how our initial grid looks:`,
+For this article, we’ll continue on with the grid we used in my first CSS Grid article.
+
+Then we’ll add the images at the end of the article. Here’s how our initial grid looks:`,
   },
   {
     id: '3',
     photo:
       'https://miro.medium.com/v2/resize:fit:720/format:webp/1*nzY4MPQ_LPedOmtxEvKhSw.png',
-    date: '9 de Fevereiro, 2017',
+    date: 'Feb 9, 2017',
     author: 'Sasha',
     title: 'How I started drawing CSS Images',
     url: 'https://medium.com/prototypr/how-i-started-drawing-css-images-3fd878675c89',
@@ -74,7 +76,7 @@ On Day 3, I decided to draw a full screen Pikachu face. Pokemon GO was still a t
     id: '4',
     photo:
       'https://miro.medium.com/v2/resize:fit:720/format:webp/1*VQKRM3hsEBpqso2h9gEMZQ.png',
-    date: '25 de Junho, 2021',
+    date: 'Jun 25, 2021',
     author: 'Takuya Matsuyama',
     title:
       'How to set up Neovim 0.5 + Modern plugins (LSP, Treesitter, Fuzzy finder, etc)',

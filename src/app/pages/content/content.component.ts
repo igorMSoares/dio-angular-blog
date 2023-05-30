@@ -10,22 +10,11 @@ import { getContent, NullArticle } from 'src/app/components/data/Content';
 export class ContentComponent {
   private id: string | null = '0';
 
-  @Input()
   coverPhoto: string = '';
-
-  @Input()
   contentDate: string = '';
-
-  @Input()
   contentAuthor: string = '';
-
-  @Input()
   contentTitle: string = '';
-
-  @Input()
   contentUrl: string = '';
-
-  @Input()
   contentText: string = '';
 
   constructor(private route: ActivatedRoute) {}

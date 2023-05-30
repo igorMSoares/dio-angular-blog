@@ -1,20 +1,27 @@
 <div class="container__content">
+  <div class="content__title">
+    <h1>{{ contentTitle }}</h1>
+  </div>
+
+
+  <div class="content__author">
+    <p>by {{ contentAuthor }} ⸱ {{ contentDate }}</p>
+  </div>
+
   <div class="content__cover">
     <img src="{{ coverPhoto }}" alt="" />
   </div>
-  <div class="content__title">
-    <h1>{{ contentTitle }}</h1>
-    <hr />
-  </div>
-  <div class="content__date">
-    <p>{{ contentDate }}</p>
-  </div>
-  <div class="content__description">
+
+  <div class="content__text">
     <p>{{ contentText }}</p>
   </div>
+
   <div class="content__url">
     <a href="{{ contentUrl }}" target="_blank"
       >Click here to read the full article on Medium</a
     >
+  </div>
+  <div class="content__back-home">
+    <a routerLink="">Back to Home</a>
   </div>
 </div>

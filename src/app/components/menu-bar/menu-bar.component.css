@@ -10,17 +10,3 @@
   text-transform: uppercase;
   margin-inline: auto;
 }
-
-.menu-bar__logo {
-  border-radius: 50%;
-  padding: 0.5rem;
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #004d7a,
-    #008793,
-    #00bf72,
-    #a8eb12
-  );
-  user-select: none;
-}

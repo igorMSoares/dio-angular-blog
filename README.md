@@ -1,27 +1,21 @@
-# DioAngularBlog
+# Dio Potência Tech Angular Developer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+Um blog simplificado, com algumas postagens do [Medium](https://medium.com/), a fim de praticar conceitos básicos no framework Angular.
 
-## Development server
+# Conteúdo Dinâmico
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para simular o acesso dinâmico a um conteúdo por parte dos componentes, o conteúdo dos artigos foram agrupados em `articlesList.ts`, como um mock para um json retornado de uma API.
 
-## Code scaffolding
+Os dados de um artigo específico são obtidos através do `ArticleService` que é injetado em todos os componentes que utilizarão esses dados.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`ArticleService`, portanto é a camada de abstração pela qual os componentes têm acesso às informações da mock API `articlesList`, funcionando como a camada _Model_ de uma arquitetura MVC.
 
-## Build
+# Resultado
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+O blog criado para esse projeto pode ser acessado [aqui](https://igormsoares.github.io/dio-angular-blog/)
 
-## Running unit tests
+# Design
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+O design do layout foi criado pelo designer [Dwinawan](https://dribbble.com/dwinawan).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Acesse o [Dribbble](https://dribbble.com/dwinawan) para conhecer outros layouts criados por ele.

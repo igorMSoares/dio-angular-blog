@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { getContent, NullArticle } from 'src/app/components/data/Content';
+import { ArticleService, NullArticle } from 'src/app/services/article.service';
 
 @Component({
   selector: 'app-content',
@@ -17,7 +17,10 @@ export class ContentComponent {
   contentUrl: string = '';
   contentText: string = '';
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private articleService: ArticleService,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(value => (this.id = value.get('id')));
@@ -28,7 +31,7 @@ export class ContentComponent {
   setValuesToComponent(id: string | null) {
     if (!id) return;
 
-    const content = getContent(id);
+    const content = this.articleService.getArticle(id);
     if (content instanceof NullArticle) return;
 
     this.coverPhoto = content.photo;

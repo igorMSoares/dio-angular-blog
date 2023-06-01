@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { getContent, NullArticle } from '../data/Content';
+import { ArticleService, NullArticle } from 'src/app/services/article.service';
 
 @Component({
   selector: 'app-small-card',
@@ -15,6 +15,8 @@ export class SmallCardComponent {
   cardDate: string = '';
   cardTitle: string = '';
 
+  constructor(private articleService: ArticleService) {}
+
   ngOnInit() {
     this.setCardProps(this.articleId);
   }
@@ -22,7 +24,7 @@ export class SmallCardComponent {
   setCardProps(id: string) {
     if (id === '-1') return;
 
-    const content = getContent(id);
+    const content = this.articleService.getArticle(id);
     if (content instanceof NullArticle) return;
 
     this.cardAuthor = content.author;

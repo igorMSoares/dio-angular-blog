@@ -1,4 +1,4 @@
-export const contentList = [
+export const articlesList = [
   {
     id: '1',
     photo:
